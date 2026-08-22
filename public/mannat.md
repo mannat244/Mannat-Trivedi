@@ -66,6 +66,22 @@ RD Public School, Betul
 ### TidyTrack — Campus Issue Tracking
 - Built and deployed a campus issue tracking Android app for MANIT (tt.manit.ac.in).
 
+### MEENA: Embeddable Campus Assistant
+- **Hackathon Project:** Built for the Smart India Hackathon 2025.
+- An AI-powered student assistant designed to drastically reduce administrative overhead.
+- Live Deployment: [meenachatbot.vercel.app](https://meenachatbot.vercel.app/)
+
+### FraudRakshak: Shield Against Fake APKs
+- **Hackathon Project:** Built for a cybersecurity hackathon.
+- A dashboard and analyzer designed to detect fraudulent Android APKs and protect end users.
+- Live Deployment: [fraudrakshak.vercel.app](https://fraudrakshak.vercel.app)
+
+---
+
+## Day-to-Day Explorations (Rabbit Holes)
+- **Resume2Web:** A tool designed to instantly transform static resumes into web pages.
+- **LIMO-DB:** A lightweight embedded database implementation built in C++.
+
 ---
 
 ## Achievements & Milestones
