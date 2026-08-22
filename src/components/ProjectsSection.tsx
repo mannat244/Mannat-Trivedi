@@ -69,7 +69,7 @@ export function ProjectsSection() {
           </div>
 
           <div className="md:col-span-7 order-1 md:order-2">
-            <div className="aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="Look under the hood ↗">
+            <a href="https://www.thebinarycritic.in/" target="_blank" rel="noreferrer" className="block aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="Look under the hood ↗">
               <motion.img 
                 initial={{ filter: "grayscale(100%)", opacity: 0.6 }}
                 whileInView={{ filter: "grayscale(0%)", opacity: 1 }}
@@ -80,7 +80,7 @@ export function ProjectsSection() {
                 className="w-full h-full object-cover" 
                 alt="The Binary Critic" 
               />
-            </div>
+            </a>
           </div>
         </div>
 
@@ -213,7 +213,7 @@ export function ProjectsSection() {
           </div>
 
           <div className="md:col-span-7 order-1 md:order-2">
-            <div className="aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="See it in the wild ↗">
+            <a href="https://tt.manit.ac.in" target="_blank" rel="noreferrer" className="block aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="See it in the wild ↗">
               <motion.img 
                 initial={{ filter: "grayscale(100%)", opacity: 0.6 }}
                 whileInView={{ filter: "grayscale(0%)", opacity: 1 }}
@@ -224,7 +224,7 @@ export function ProjectsSection() {
                 className="w-full h-full object-cover object-top" 
                 alt="TidyTrack" 
               />
-            </div>
+            </a>
           </div>
         </div>
 
@@ -233,7 +233,7 @@ export function ProjectsSection() {
         {/* Project 4: InvenTrack */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24 items-center">
           <div className="md:col-span-7">
-            <div className="aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="What happened underneath →">
+            <a href="https://github.com/mannat244/inventrack" target="_blank" rel="noreferrer" className="block aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="What happened underneath →">
               <motion.img 
                 initial={{ filter: "grayscale(100%)", opacity: 0.6 }}
                 whileInView={{ filter: "grayscale(0%)", opacity: 1 }}
@@ -244,7 +244,7 @@ export function ProjectsSection() {
                 className="w-full h-full object-cover object-top" 
                 alt="InvenTrack" 
               />
-            </div>
+            </a>
           </div>
 
           <div className="md:col-span-5">
@@ -307,7 +307,7 @@ export function ProjectsSection() {
           </div>
 
           <div className="md:col-span-7 order-1 md:order-2">
-            <div className="aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="View MEENA Architecture ↗">
+            <a href="https://meenachatbot.vercel.app/" target="_blank" rel="noreferrer" className="block aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="View MEENA Architecture ↗">
               <motion.img 
                 initial={{ filter: "grayscale(100%)", opacity: 0.6 }}
                 whileInView={{ filter: "grayscale(0%)", opacity: 1 }}
@@ -318,14 +318,14 @@ export function ProjectsSection() {
                 className="w-full h-full object-cover" 
                 alt="MEENA Architecture" 
               />
-            </div>
+            </a>
           </div>
         </div>
 
         {/* Hackathon 2: FraudRakshak */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24 items-center mt-48">
           <div className="md:col-span-7">
-            <div className="aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="Analyze APK ↗">
+            <a href="https://fraudrakshak.vercel.app" target="_blank" rel="noreferrer" className="block aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="Analyze APK ↗">
               <motion.img 
                 initial={{ filter: "grayscale(100%)", opacity: 0.6 }}
                 whileInView={{ filter: "grayscale(0%)", opacity: 1 }}
@@ -336,7 +336,7 @@ export function ProjectsSection() {
                 className="w-full h-full object-cover" 
                 alt="FraudRakshak Dashboard" 
               />
-            </div>
+            </a>
           </div>
 
           <div className="md:col-span-5">
