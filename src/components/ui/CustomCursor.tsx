@@ -39,7 +39,7 @@ export const CustomCursor: React.FC = () => {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 bg-white rounded-full pointer-events-none z-[100] mix-blend-difference flex items-center justify-center text-black font-mono text-[10px] font-bold overflow-hidden text-center p-2 leading-tight"
+        className="hidden md:flex fixed top-0 left-0 bg-white rounded-full pointer-events-none z-[100] mix-blend-difference items-center justify-center text-black font-mono text-[10px] font-bold overflow-hidden text-center p-2 leading-tight"
         animate={{
           x: mousePosition.x - (isHovering ? (cursorText ? 50 : 20) : 8),
           y: mousePosition.y - (isHovering ? (cursorText ? 50 : 20) : 8),
