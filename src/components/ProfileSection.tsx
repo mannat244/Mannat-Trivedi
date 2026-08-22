@@ -7,7 +7,7 @@ export function ProfileSection() {
 
   const copyToMarkdown = async () => {
     try {
-      const response = await fetch('/mannat.md');
+      const response = await fetch(`${import.meta.env.BASE_URL}mannat.md`);
       const text = await response.text();
       await navigator.clipboard.writeText(text);
       setCopied(true);
