@@ -4,7 +4,7 @@ import { Briefcase } from 'lucide-react';
 import { TextReveal } from './ui/text-reveal';
 
 const images = [
-  "https://images.unsplash.com/photo-1550565118-3a14e8d0386f?q=80&w=1200&auto=format&fit=crop", // Bosch Headquarters
+  `${import.meta.env.BASE_URL}mannat.jpg`, // Personal
   "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop", // Code Architecture
   "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"  // Office Background
 ];

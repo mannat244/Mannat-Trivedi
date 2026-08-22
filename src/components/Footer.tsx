@@ -14,7 +14,7 @@ export function Footer() {
           <a href="https://github.com/mannat244" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors">GitHub</a>
           <a href="https://www.linkedin.com/in/mannattrivedi/" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors">LinkedIn</a>
           <a href="https://leetcode.com/u/MannatTrivedi/" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors">LeetCode</a>
-          <a href="/resume.pdf" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors">Resume</a>
+          <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors">Resume</a>
           <a href="mailto:mannateducation@gmail.com" className="text-zinc-400 hover:text-white transition-colors">Email</a>
         </div>
         

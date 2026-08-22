@@ -70,7 +70,7 @@ export function ProjectsSection() {
 
           <div className="md:col-span-7 order-1 md:order-2">
             <div className="aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="Look under the hood ↗">
-              <img src="/tbc.png" className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0" alt="The Binary Critic" />
+              <img src={`${import.meta.env.BASE_URL}tbc.png`} className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0" alt="The Binary Critic" />
             </div>
           </div>
         </div>
@@ -205,7 +205,7 @@ export function ProjectsSection() {
 
           <div className="md:col-span-7 order-1 md:order-2">
             <div className="aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="See it in the wild ↗">
-              <img src="/tidy.png" className="w-full h-full object-cover object-top opacity-60 hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0" alt="TidyTrack" />
+              <img src={`${import.meta.env.BASE_URL}tidy.png`} className="w-full h-full object-cover object-top opacity-60 hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0" alt="TidyTrack" />
             </div>
           </div>
         </div>
@@ -216,7 +216,7 @@ export function ProjectsSection() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24 items-center">
           <div className="md:col-span-7">
             <div className="aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="What happened underneath →">
-              <img src="inventrack.png" className="w-full h-full object-cover object-top opacity-60 hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0" alt="InvenTrack" />
+              <img src={`${import.meta.env.BASE_URL}inventrack.png`} className="w-full h-full object-cover object-top opacity-60 hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0" alt="InvenTrack" />
             </div>
           </div>
 
@@ -281,7 +281,7 @@ export function ProjectsSection() {
 
           <div className="md:col-span-7 order-1 md:order-2">
             <div className="aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="View MEENA Architecture ↗">
-              <img src="/meena.png" className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0" alt="MEENA Architecture" />
+              <img src={`${import.meta.env.BASE_URL}meena.png`} className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0" alt="MEENA Architecture" />
             </div>
           </div>
         </div>
@@ -290,7 +290,7 @@ export function ProjectsSection() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24 items-center mt-48">
           <div className="md:col-span-7">
             <div className="aspect-[4/5] bg-zinc-900 rounded-3xl overflow-hidden relative" data-cursor="Analyze APK ↗">
-              <img src="fraud.png" className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0" alt="FraudRakshak Dashboard" />
+              <img src={`${import.meta.env.BASE_URL}fraud.png`} className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-700 grayscale hover:grayscale-0" alt="FraudRakshak Dashboard" />
             </div>
           </div>
 

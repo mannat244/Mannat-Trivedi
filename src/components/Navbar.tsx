@@ -22,7 +22,7 @@ export function Navbar() {
         <a href="#projects" className="text-zinc-400 hover:text-white transition-colors hidden md:block">Work</a>
         <a href="#role-selector" className="text-zinc-400 hover:text-white transition-colors hidden md:block">AI Profile</a>
         <a 
-          href="/resume.pdf" 
+          href={`${import.meta.env.BASE_URL}resume.pdf`} 
           target="_blank"
           className="px-4 py-2 rounded-full border border-zinc-700 text-zinc-300 hover:text-white hover:border-zinc-400 transition-colors"
         >

@@ -40,7 +40,7 @@ export function Hero() {
           
           <div className="flex flex-col sm:flex-row gap-6 mb-24">
             <a
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               target="_blank"
               data-cursor="The condensed version"
               className="flex items-center gap-2 group font-mono text-sm tracking-widest uppercase text-white hover:text-zinc-300 transition-colors"
