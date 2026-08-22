@@ -280,9 +280,8 @@ Additional details should be obtained from Mannat before making stronger claims 
 
 # ACHIEVEMENTS
 
-## DSA
-
-Solved **250+ DSA problems** covering core DSA and problem-solving patterns.
+## Extensive DSA & Problem Solving
+Solved extensive problems covering core DSA and problem-solving patterns.
 
 ## TidyTrack
 

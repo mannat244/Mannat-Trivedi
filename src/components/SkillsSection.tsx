@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export function SkillsSection() {
   const skills = [
-    { name: "C / C++", places: ["250+ LeetCode / DSA", "Core Fundamentals", "Competitive Programming"] },
+    { name: "C / C++", places: ["LeetCode / DSA Practice", "Core Fundamentals", "Competitive Programming"] },
     { name: "System Design", places: ["The Binary Critic (Caching Hierarchy)", "QueryCraft (Validation Pipeline)"] },
     { name: "JavaScript / Node", places: ["The Binary Critic", "QueryCraft", "BGSW"] },
     { name: "React / Next.js", places: ["BGSW", "TidyTrack", "The Binary Critic"] },

@@ -82,8 +82,8 @@ export function EducationSection() {
                   <li className="flex gap-4">
                     <span className="text-zinc-600 font-mono mt-1">01</span>
                     <div>
-                      <p className="text-white font-medium">250+ DSA Problems</p>
-                      <p className="text-zinc-400 text-sm font-light mt-1">Solved across LeetCode and other platforms, covering core data structures and advanced problem-solving patterns.</p>
+                      <p className="text-white font-medium">Extensive DSA & Problem Solving</p>
+                      <p className="text-zinc-400 text-sm font-light mt-1">Consistent practice across LeetCode and other platforms, mastering core data structures and advanced problem-solving patterns.</p>
                     </div>
                   </li>
                   <li className="flex gap-4">
