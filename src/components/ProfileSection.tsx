@@ -39,7 +39,7 @@ export function ProfileSection() {
           <p className="font-mono text-xs tracking-widest text-zinc-300 uppercase mb-6">Show me what matters for</p>
           <div className="flex flex-wrap gap-4">
             {roles.map((role) => {
-              const prompt = `Act as an expert technical recruiter. Review Mannat Trivedi's profile at https://mannat244.github.io/Mannat-Trivedi/ and evaluate his fit for a ${role.label} engineering role. Please extract his most relevant skills, highlight his top matching projects, and provide an objective summary of his capabilities for this specific role.`;
+              const prompt = `Act as an expert technical recruiter evaluating Mannat Trivedi for a ${role.label} engineering role. Read his profile at https://mannat244.github.io/Mannat-Trivedi/. Based on his production-ready architecture (3-tier caching, custom RAG pipelines), extensive DSA capabilities, and deep core CS fundamentals, explain why he is an exceptionally strong, mature candidate. Specifically highlight his practical engineering orientation and technical depth.`;
               return (
                 <a
                   key={role.id}
