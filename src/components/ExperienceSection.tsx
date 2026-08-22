@@ -12,10 +12,20 @@ export function ExperienceSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % images.length);
-    }, 4000);
-    return () => clearInterval(interval);
+    let timeout: NodeJS.Timeout;
+    const tick = () => {
+      setActiveIndex((prev) => {
+        const next = (prev + 1) % images.length;
+        // Bias: keep the first image (Mannat) longer
+        const delay = next === 0 ? 6000 : 2500;
+        timeout = setTimeout(tick, delay);
+        return next;
+      });
+    };
+    
+    // Initial delay for the first image
+    timeout = setTimeout(tick, 6000);
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
@@ -102,10 +112,15 @@ export function ExperienceSection() {
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                     className="absolute w-[85%] aspect-[4/3] bg-zinc-950 border border-zinc-700 rounded-2xl overflow-hidden shadow-2xl"
                   >
-                    <img
+                    <motion.img
+                      initial={{ filter: "grayscale(100%)" }}
+                      whileInView={{ filter: "grayscale(0%)" }}
+                      whileHover={{ filter: "grayscale(0%)" }}
+                      transition={{ duration: 0.7 }}
+                      viewport={{ once: false, margin: "-20%" }}
                       src={src}
                       alt="Bosch Experience"
-                      className={`w-full h-full object-cover transition-all duration-700 ${offset === 0 ? 'mix-blend-luminosity hover:mix-blend-normal' : 'grayscale'}`}
+                      className="w-full h-full object-cover"
                     />
                   </motion.div>
                 );
