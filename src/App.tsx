@@ -8,10 +8,10 @@ import { ExperienceSection } from './components/ExperienceSection';
 import { ProjectsSection } from './components/ProjectsSection';
 import { PhilosophySection } from './components/PhilosophySection';
 import { SkillsSection } from './components/SkillsSection';
+import { EducationSection } from './components/EducationSection';
 import { ProfileSection } from './components/ProfileSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
-import type { RoleId } from './data/roles';
 
 export function App() {
   return (
@@ -31,6 +31,7 @@ export function App() {
           <ProjectsSection />
           <PhilosophySection />
           <SkillsSection />
+          <EducationSection />
           <ProfileSection />
           <ContactSection />
         </main>
