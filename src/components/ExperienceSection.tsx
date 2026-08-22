@@ -6,7 +6,6 @@ import { TextReveal } from './ui/text-reveal';
 const images = [
   `${import.meta.env.BASE_URL}mannat.jpg`, // Personal
   `${import.meta.env.BASE_URL}team.jpg`, // Team at BGSW
-  "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"  // Office Background
 ];
 
 export function ExperienceSection() {
@@ -28,7 +27,7 @@ export function ExperienceSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          
+
           {/* Left Text Column */}
           <div>
             <div className="flex items-center gap-4 mb-8">
@@ -43,7 +42,7 @@ export function ExperienceSection() {
 
             <div className="space-y-6 text-zinc-400 font-light text-lg leading-relaxed">
               <p>
-                Built an internal <strong className="text-white">Employee Skill Assessment Platform</strong> used across the TAF Department. 
+                Built an internal <strong className="text-white">Employee Skill Assessment Platform</strong> used across the TAF Department.
               </p>
               <p>
                 Instead of making employees fill out endless manual forms, I automated the workflow with bulk uploads and dynamic generation, slashing submission times by <strong className="text-white">40–50%</strong>.
@@ -59,7 +58,7 @@ export function ExperienceSection() {
             <AnimatePresence>
               {images.map((src, index) => {
                 const offset = (index - activeIndex + images.length) % images.length;
-                
+
                 let zIndex = 0;
                 let rotate = 0;
                 let scale = 1;
@@ -90,23 +89,23 @@ export function ExperienceSection() {
                 }
 
                 return (
-                  <motion.div 
+                  <motion.div
                     key={src}
                     initial={false}
-                    animate={{ 
-                      zIndex, 
-                      rotate, 
-                      scale, 
+                    animate={{
+                      zIndex,
+                      rotate,
+                      scale,
                       opacity,
                       x
                     }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                     className="absolute w-[85%] aspect-[4/3] bg-zinc-950 border border-zinc-700 rounded-2xl overflow-hidden shadow-2xl"
                   >
-                    <img 
-                      src={src} 
-                      alt="Bosch Experience" 
-                      className={`w-full h-full object-cover transition-all duration-700 ${offset === 0 ? 'mix-blend-luminosity hover:mix-blend-normal' : 'grayscale'}`} 
+                    <img
+                      src={src}
+                      alt="Bosch Experience"
+                      className={`w-full h-full object-cover transition-all duration-700 ${offset === 0 ? 'mix-blend-luminosity hover:mix-blend-normal' : 'grayscale'}`}
                     />
                   </motion.div>
                 );
