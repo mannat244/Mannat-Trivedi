@@ -5,7 +5,7 @@ import { TextReveal } from './ui/text-reveal';
 
 const images = [
   `${import.meta.env.BASE_URL}mannat.jpg`, // Personal
-  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop", // Code Architecture
+  `${import.meta.env.BASE_URL}team.jpg`, // Team at BGSW
   "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"  // Office Background
 ];
 
