@@ -38,17 +38,20 @@ export function ProfileSection() {
           
           <p className="font-mono text-xs tracking-widest text-zinc-300 uppercase mb-6">Show me what matters for</p>
           <div className="flex flex-wrap gap-4">
-            {roles.map((role) => (
-              <a
-                key={role.id}
-                href={`https://chatgpt.com/?q=Does+Mannat+Trivedi+fit+the+role+of+${role.label}?+Here+is+his+profile:+https://mannattrivedi.com`}
-                target="_blank"
-                rel="noreferrer"
-                className="px-6 py-3 rounded-full border border-white/10 text-zinc-400 hover:text-white hover:border-zinc-300 transition-colors font-mono text-sm tracking-widest uppercase flex items-center gap-2 group"
-              >
-                {role.label} <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
-              </a>
-            ))}
+            {roles.map((role) => {
+              const prompt = `Act as an expert technical recruiter. Review Mannat Trivedi's profile at https://mannat244.github.io/Mannat-Trivedi/ and evaluate his fit for a ${role.label} engineering role. Please extract his most relevant skills, highlight his top matching projects, and provide an objective summary of his capabilities for this specific role.`;
+              return (
+                <a
+                  key={role.id}
+                  href={`https://chatgpt.com/?q=${encodeURIComponent(prompt)}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-6 py-3 rounded-full border border-white/10 text-zinc-400 hover:text-white hover:border-zinc-300 transition-colors font-mono text-sm tracking-widest uppercase flex items-center gap-2 group"
+                >
+                  {role.label} <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                </a>
+              );
+            })}
           </div>
         </div>
 
